@@ -1,0 +1,191 @@
+:root {
+  --dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 30%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 90%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 8rem 1.5rem 0 1.5rem;
+  font-size: 1.5rem;
+  background-image: url("/images/bg-pattern-top-mobile.svg"),
+    url("/images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-size: 100%;
+}
+/* ---------------------------header--------------------------- */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  min-width: 375px;
+  height: auto;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 6.4rem;
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 3rem;
+  color: var(--dark-magenta);
+}
+
+header p {
+  margin: 0 4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: var(--Dark-Grayish-Magenta);
+}
+
+/* ----------------------------main----------------------------- */
+
+/* main {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  width: 100%;
+  min-width: 375px;
+  height: auto;
+} */
+
+/* ---contenedores stars */
+.main-section-stars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.8rem;
+  width: 100%;
+}
+
+.main-section-stars .section-container-stars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32rem;
+  max-width: 44rem;
+  height: 8rem;
+  padding: 1.6rem 1.4rem;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  background: var(--Light-Grayish-Magenta);
+}
+
+.main-section-stars .section-container-stars h4 {
+  font-weight: bold;
+  line-height: 1.3rem;
+  font-size: 1.7rem;
+  color: var(--dark-magenta);
+}
+
+.stars-container {
+  min-width: 14rem;
+}
+
+.stars-container img {
+  margin-left: 0.3rem;
+  width: 2rem;
+  height: 2rem;
+}
+/* ------------contenedores cards----------- */
+.main-section-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 32rem;
+  height: 24rem;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  background: var(--dark-magenta);
+}
+
+.cards-container .cards-container-users {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cards-container-users img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.cards-container-users div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cards-container-users div h3 {
+  font-weight: bold;
+  line-height: 2rem;
+  font-size: 1.6rem;
+  color: var(--White);
+}
+
+.cards-container-users div .status {
+  font-weight: 500;
+  line-height: 2rem;
+  color: var(--soft-pink);
+}
+
+.cards-container p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: var(--White);
+}
+
+/* --------------------footer--------------- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 376px) {
+  .main-section-stars #stars1,
+  .main-section-cards #cards1 {
+    align-self: flex-start;
+  }
+
+  .main-section-stars #stars3,
+  .main-section-cards #cards3 {
+    align-self: flex-end;
+  }
+}

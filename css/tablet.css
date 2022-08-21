@@ -1,0 +1,39 @@
+html {
+  font-size: 65%;
+}
+body {
+  background-image: url("/images/bg-pattern-top-desktop.svg"),
+    url("/images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-size: 600px;
+}
+
+.main-section-stars .section-container-stars {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 444px;
+  height: 50px;
+}
+
+.main-section-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-row-gap: 3rem;
+}
+#cards1 {
+  grid-column: 1/2;
+}
+
+#cards3 {
+  grid-column: 2/3;
+}
+
+#cards3 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}

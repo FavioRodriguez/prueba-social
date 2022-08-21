@@ -1,0 +1,32 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 3rem;
+}
+
+header {
+  grid-column: 1/6;
+  text-align: left;
+  gap: 2rem;
+}
+
+header h1 {
+  margin: 0 4rem;
+  font-size: 4.2rem;
+}
+
+header p {
+  font-size: 2rem;
+}
+
+.main-section-stars {
+  grid-column: 6/-1;
+}
+
+.main-section-cards {
+  grid-column: 1/-1;
+}
+
+footer {
+  grid-column: 1/-1;
+}
